@@ -14,12 +14,36 @@
     <body>
         <div class="container">
             <h1>TOY</h1>
-            <button class="defaultPopupBtn" onClick="openPopup()">기본 레이어 팝업창</button>
+            <div class="btnCont">
+                <button class="defaultPopupBtn" onClick="openPopup()">기본 레이어 팝업창</button>
+                <button class="animationModalBtn">애니메이션 레이어 팝업창</button>
+            </div>
             <div class="defaultPopupCont">
                 <div class="defaultPopupWrap">
                     <div class="titleWrap">
                         <button class="closeBtn" onClick="closePopup()"><i class="las la-times"></i></button>
                         <h6>팝업 제목</h6>
+                        <span class="optionLabel">옵션 라벨</span>
+                    </div>
+                    <p class="contentText">
+                        모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달
+                        내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용 모달 내용
+                        모달 내용 모달 내용
+                    </p>
+                    <div class="checkboxWrap">
+                        <input type="checkbox" name="neverWatch" id="neverWatch" /><label
+                            for="neverWatch"
+                            class="checkboxLabel"
+                            >다시 보지 않기</label
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="animationModalCont">
+                <div class="animationModalWrap">
+                    <div class="titleWrap">
+                        <button class="closeBtn"><i class="las la-times"></i></button>
+                        <h6>모달 제목</h6>
                         <span class="optionLabel">옵션 라벨</span>
                     </div>
                     <p class="contentText">
