@@ -137,6 +137,12 @@ input {
             animation: scaleUp 0.3s linear;
         }
     }
+    &.closing {
+        display: flex;
+        .animationModalWrap {
+            animation: scaleDown 0.5s linear forwards;
+        }
+    }
     justify-content: center;
     align-items: flex-start;
     .animationModalWrap {
@@ -145,7 +151,6 @@ input {
         margin-top: 48vh;
         transform: translateY(-50%);
         padding: 24px;
-        animation: scaleDown 0.5s linear;
         .titleWrap {
             position: relative;
             padding-bottom: 16px;
@@ -189,14 +194,17 @@ input {
 @keyframes scaleUp {
     0% {
         transform: scale(0.2) translateY(-50%);
+        transform-origin: center;
         opacity: 0;
     }
     50% {
         transform: scale(0.5) translateY(-50%);
+        transform-origin: center;
         opacity: 0.5;
     }
     100% {
         transform: scale(1) translateY(-50%);
+        transform-origin: center;
         opacity: 1;
     }
 }

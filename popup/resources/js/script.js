@@ -5,6 +5,7 @@ const openPopup = () => {
 
 const closePopup = () => {
     document.querySelector('.defaultPopupCont').classList.remove('active');
+    modalCont.classList.remove('active');
 };
 
 //animation 모달
@@ -14,6 +15,10 @@ const openAniModal = () => {
 
 const closeAniModal = () => {
     document.querySelector('.animationModalCont').classList.remove('active');
+    document.querySelector('.animationModalCont').classList.add('closing');
+    setTimeout(function () {
+        document.querySelector('.animationModalCont').classList.remove('closing');
+    }, 500); // scaleDown 애니메이션 시간과 동일하게 설정 (0.5초)
 };
 
 document.querySelector('.animationModalBtn').addEventListener('click', openAniModal);
