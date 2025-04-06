@@ -70,13 +70,19 @@ h1 {
   font-weight: 700;
 }
 .accordianType1 .accordion li .accordion-body {
-  padding: 0 48px 20px 18px;
+  padding: 0 48px 0px 18px;
   color: #101314;
   background-color: #f8f8f8;
-  display: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
 }
 .accordianType1 .accordion li .accordion-body.active {
-  display: block;
+  padding: 0 48px 20px 18px;
+  max-height: 500px;
+  opacity: 1;
 }
 .accordianType1 .accordion li.disabled a {
   cursor: not-allowed;
