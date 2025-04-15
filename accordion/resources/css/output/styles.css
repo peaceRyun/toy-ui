@@ -49,6 +49,14 @@ h1 {
   position: relative;
   border-bottom: 1px solid #d8d8d8;
 }
+.accordianType1 .accordion li.active a::after {
+  content: "-";
+}
+.accordianType1 .accordion li.active .accordion-body {
+  padding: 0 48px 20px 18px;
+  max-height: 500px;
+  opacity: 1;
+}
 .accordianType1 .accordion li a {
   position: relative;
   display: block;
@@ -63,9 +71,6 @@ h1 {
   transform: translateY(-50%);
   font-size: 20px;
 }
-.accordianType1 .accordion li a.active::after {
-  content: "-";
-}
 .accordianType1 .accordion li .label {
   font-weight: 700;
 }
@@ -78,11 +83,6 @@ h1 {
   height: auto;
   max-height: 0;
   overflow: hidden;
-}
-.accordianType1 .accordion li .accordion-body.active {
-  padding: 0 48px 20px 18px;
-  max-height: 500px;
-  opacity: 1;
 }
 .accordianType1 .accordion li.disabled a {
   cursor: not-allowed;
